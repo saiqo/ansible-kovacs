@@ -36,6 +36,7 @@ $ ansible --version
 
 Notez la version d'Ansible :
 ![alt text](image4.png)
+
 Notre ansible est en version `2.10.8`
 
 Déconnectez-vous et supprimez la VM :
@@ -106,7 +107,7 @@ Vérification de la version d'ansible
 ```
 (ansible) $ ansible --version
 ```
-![alt text](image-1.png)
+![alt text](image6.png)
 
 On a donc un ansible en version `2.15.13`
 
