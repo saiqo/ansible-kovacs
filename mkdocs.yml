@@ -58,6 +58,7 @@ nav:
   - Accueil: index.md
   - Commandes utiles: commandes_utiles.md
   - Ansible:
+    - Tests: tests/index.md
     - Installation d'ansible: 01-Installation_ansible/index.md
     - Authentification: 03-Authentification/index.md
     - Configuration de base: 06-Configuration_de_base/index.md
