@@ -1,6 +1,4 @@
-#
-
----
+# Ansible
 
 Site Web pour le cours d'ansible
 
