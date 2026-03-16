@@ -1,7 +1,8 @@
 # Tests
+Test de vérification du bon fonctionnement de la machine Mint avec Vagrant et Virtualbox
 
 ## Test 1
-![alt text](test01.png)
+![alt text](test1.png)
 
 ## Test 2
-![alt text](test02.png)
+![alt text](test2.png)
