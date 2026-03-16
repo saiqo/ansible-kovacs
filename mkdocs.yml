@@ -59,7 +59,8 @@ nav:
   - Commandes utiles: commandes_utiles.md
   - Ansible:
     - Installation d'ansible: 01-Installation_ansible/index.md
-    - Authentification: 02-Authentification/index.md
+    - Authentification: 03-Authentification/index.md
+    - Configuration de base: 06-Configuration_de_base/index.md
  
 
 
