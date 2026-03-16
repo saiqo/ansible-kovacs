@@ -44,33 +44,48 @@ $ ansible all -i target01,target02,target03 -m ping
 
 * Créez un répertoire de projet ~/monprojet.
 ``` bash
-$ 
+$ mkdir ~/monprojet
 ```
 
 * Créez un fichier vide ansible.cfg dans ce répertoire.
 ``` bash
-$ 
+$ cd ~/monprojet
+$ touch ansible.cfg
+$ ls
 ```
 
 * Vérifiez si ce fichier est bien pris en compte par Ansible.
 ``` bash
-$ 
+$ ansible --version | head -n 2
 ```
- 
+ ![alt text](image-1.png)
+
 * Spécifiez un inventaire nommé hosts.
 ``` bash
-$ 
+$ vi ansible.cfg
+    [defaults]
+    inventory = ./hosts
 ```
 
 * Activez la journalisation dans ~/journal/ansible.log.
 ``` bash
-$ 
+$ mkdir -v ~/journal/
+
+#Modifier le fichier ansible.cfg
+
+[defaults]
+inventory = ./hosts
+log_path = ~/journal/ansible.log
+
 ```
 
 * Testez la journalisation.
 ``` bash
-$ 
+$ ansible all -i target01,target02,target03 -m ping
+$ cat ~/journal/ansible.log
 ```
+![alt text](image-2.png)
+
 
 * Créez un groupe [testlab] avec vos trois Target Hosts.
 ``` bash
