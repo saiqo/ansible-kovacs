@@ -1,5 +1,3 @@
-# Atelier 06 - Configuration de base
-
 # Atelier 06 - Organiser un projet Ansible
 
 ### A vous de jouer : 
