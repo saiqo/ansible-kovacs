@@ -58,9 +58,9 @@ nav:
   - Ansible:
     - Index: index.md
     - Tests: tests/index.md
-    - Installation d'ansible: 01-Installation_ansible/index.md
-    - Authentification: 03-Authentification/index.md
-    - Configuration de base: 06-Configuration_de_base/index.md
-    - Idempotence: 07-Idempotence/index.md
+    - Atelier 01 - Installation d'ansible: 01-Installation_ansible/index.md
+    - Atelier 03 - Authentification: 03-Authentification/index.md
+    - Atelier 06 - Configuration de base: 06-Configuration_de_base/index.md
+    - Atelier 07 - Idempotence: 07-Idempotence/index.md
 
   - Commandes utiles: commandes_utiles.md
