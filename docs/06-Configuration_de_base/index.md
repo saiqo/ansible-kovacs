@@ -15,13 +15,25 @@
 
 * Configurez l'authentification par clé SSH avec les trois Target Hosts.
 ``` bash
-$ 
+$ ssh-keyscan -t rsa target01 target02 target03 >> .ssh/known_hosts
+
+#Générer la clé sur "Control" 
+$ ssh-keygen
+
+#Distribution de la clé publique sur les targets : (vagrant)
+$ ssh-copy-id vagrant@target01
+$ ssh-copy-id vagrant@target02
+$ ssh-copy-id vagrant@target03
 ```
 
 
 * Installez Ansible.
 ``` bash
-$ 
+$ sudo apt update
+$ sudo apt-add-repository ppa:ansible/ansible
+$ apt-cache search --names-only ansible
+$ sudo apt install -y ansible
+$ ansible --version
 ```
 
 
