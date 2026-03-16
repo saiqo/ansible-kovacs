@@ -26,7 +26,6 @@ $ ssh-copy-id vagrant@target02
 $ ssh-copy-id vagrant@target03
 ```
 
-
 * Installez Ansible.
 ``` bash
 $ sudo apt update
@@ -39,9 +38,9 @@ $ ansible --version
 
 * Envoyez un premier ping Ansible sans configuration.
 ``` bash
-$ 
+$ ansible all -i target01,target02,target03 -m ping
 ```
-
+![alt text](image.png)
 
 * Créez un répertoire de projet ~/monprojet.
 ``` bash
