@@ -89,30 +89,49 @@ $ cat ~/journal/ansible.log
 
 * Créez un groupe [testlab] avec vos trois Target Hosts.
 ``` bash
-$ 
+#Dans ~/monprojet
+$ vi hosts
+    [testlab]
+    target01
+    target02
+    target03
 ```
 
 * Définissez explicitement l'utilisateur vagrant pour la connexion à vos cibles.
 ``` bash
-$ 
+$ vi hosts
+[testlab:vars]
+ansible_user=vagrant
+
 ```
 
 * Envoyez un ping Ansible vers le groupe de machines [all].
 ``` bash
-$ 
+$ ansible all -m ping
 ```
+![alt text](image-3.png)
+
 
 * Définissez l'élévation des droits pour l'utilisateur vagrant sur les Target Hosts.
 ``` bash
-$ 
+$ vi hosts
+#dans [testlab:vars]
+ansible_become=yes
 ```
 
 * Affichez la première ligne du fichier /etc/shadow sur tous les Target Hosts.
 ``` bash
-$ 
+$ ansible all -a "head -n 1 /etc/shadow"
 ```
+![alt text](image-4.png)
 
 * Quittez le Control Host et supprimez toutes les VM de l'atelier.
 ``` bash
-$ 
+$ exit
+$ vagrant destroy -f
 ```
+![alt text](image-6.png)
+
+* Supplémentaire : Préciser l'interpréteur python
+### Pour éviter d'avoir les warnings Python
+![alt text](image-5.png)
