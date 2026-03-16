@@ -56,6 +56,7 @@ markdown_extensions:
 
 nav:
   - Accueil: index.md
+  - Commandes utiles: commandes_utiles.md
   - Ansible:
     - Installation d'ansible: 01-Installation_ansible/index.md
     - Authentification: 02-Authentification/index.md
