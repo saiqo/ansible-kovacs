@@ -1,0 +1,66 @@
+---
+site_name: ansible-kovacs
+site_author: Mael & Micka
+copyright: Copyright &copy; 2026 Mael & Micka
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: deep-purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: deep-purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Rubik
+  language: fr
+
+  # favicon: assets/images/favicon.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+
+
+plugins:
+  - search:
+      lang: fr
+
+
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+
+
+# extra:
+#   social:
+#     - icon: fontawesome/brands/github 
+#       link: https://github.com/saiqo
+
+nav:
+  - Accueil: index.md
+  - Ansible:
+    - Installation d'ansible: 01-Installation_ansible/index.md
+    - Authentification: 02-Authentification/index.md
+ 
+
+
+
+    
