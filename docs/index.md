@@ -1,4 +1,8 @@
-# Ansible
+---
+icon: material/home
+---
+
+# Rapports Ansible
 
 Site Web pour le cours d'ansible
 

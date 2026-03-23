@@ -1,3 +1,7 @@
+---
+icon: material/note-edit
+---
+
 # Commandes utiles
 
 ## Vagrant
