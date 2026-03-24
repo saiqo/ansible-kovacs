@@ -47,7 +47,7 @@ On vérifie que la syntaxe est correcte avec `yamllint`
 $ yamllint apache-debian.yml
 ```
 
-On se rend sur notre site :
+### Capture du serveur web Debian :
 ![alt text](image.png)
 
 **Un deuxième playbook apache-rocky.yml qui installe Apache sur l'hôte rocky avec une page personnalisée Apache web server running on Rocky Linux.**
@@ -100,7 +100,7 @@ On vérifie que la syntaxe est correcte avec `yamllint`
 $ yamllint apache-rocky.yml
 ```
 
-On se rend sur notre site :
+### Capture du serveur web Rocky :
 ![alt text](image-1.png)
 
 **Un troisième playbook apache-suse.yml qui installe Apache sur l'hôte suse avec une page personnalisée Apache web server running on SUSE Linux.**
@@ -142,6 +142,6 @@ Voici le playbook pour SUSE :
           </html>
 
 ```
-### Capture du serveur SUSE :
+### Capture du serveur web SUSE :
 
 ![alt text](image-2.png)
