@@ -57,5 +57,3 @@ $ ansible all -m command -a "df -h /"
 
 On remarque, que même si on lance la commande plusieurs fois, le résultat de cette commande est toujours dans l'état `"changed":true`, contrairement à ce qu'on à pu avoir comme résultat précédemment.
 
-Cela s'explique par le fait que des données sont écrites régulièrement sur le disque et donc la valeur de retour de la commande `df -h /` est différente à chaque fois où on la lance.
-Donc on aura à chaque fois l'état `"changed":true`
