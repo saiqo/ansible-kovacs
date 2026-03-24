@@ -142,5 +142,6 @@ Voici le playbook pour SUSE :
           </html>
 
 ```
-Capture du serveur SUSE
+## Capture du serveur SUSE :
+
 ![alt text](image-2.png)
