@@ -62,5 +62,6 @@ nav:
     - Atelier 03 - Authentification: 03-Authentification/index.md
     - Atelier 06 - Configuration de base: 06-Configuration_de_base/index.md
     - Atelier 07 - Idempotence: 07-Idempotence/index.md
+    - Atelier 10 - Playbooks: 10-Playbooks/index.md
 
   - Commandes utiles: commandes_utiles.md
