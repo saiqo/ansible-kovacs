@@ -50,3 +50,9 @@ Pour effectuer une recherche dans le cache uniquement sur le nom des paquets
 apt-ache search --names-only ansible
 ```
 
+## Vi 
+``` bash
+:set paste #coller en gardant les indentations
+:set 
+```
+
