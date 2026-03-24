@@ -4,6 +4,8 @@ icon: material/note-edit
 
 # Commandes utiles
 
+Listes de commandes utiles
+
 ## Vagrant
 ```
 vagrant box list
@@ -14,8 +16,21 @@ vagrant global-status
 ```
 
 ## Ansible
-```bash
-ansible testing --list-hosts #affiche toutes les machines qui sont compris dans le groupe "all"
+Ping (module ansible) toutes les machines
+``` bash
+ansible -m ping all
+```
+
+Afficher la liste des hôtes de notre inventaire
+``` bash
+ansible all --list-hosts
+```
+
+Ansible config
+``` bash
+ansible-config view # Affiche la config actuelle
+ansible-config dump # Affiche toutes les options possible pour la config
+
 ```
 
 ## Debian/Ubuntu
