@@ -14,7 +14,7 @@ vagrant global-status
 ```
 
 ## Ansible
-```
+```bash
 ansible testing --list-hosts #affiche toutes les machines qui sont compris dans le groupe "all"
 ```
 
