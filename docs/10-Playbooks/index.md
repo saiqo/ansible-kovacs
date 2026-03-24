@@ -104,3 +104,43 @@ On se rend sur notre site :
 ![alt text](image-1.png)
 
 **Un troisième playbook apache-suse.yml qui installe Apache sur l'hôte suse avec une page personnalisée Apache web server running on SUSE Linux.**
+
+Voici le playbook pour SUSE :
+
+```yaml title="apache-suse.yml"
+
+--- # apache-suse.yml
+
+- hosts: suse
+
+  tasks:
+
+    - name: Install Apache
+      zypper:
+        name: apache2
+
+    - name: Start et Enable Apache
+      service:
+        name: apache2
+        state: started
+        enabled: true
+
+    - name: Customisation Page
+      copy:
+        dest: /srv/www/htdocs/index.html
+        mode: 0644
+        content: |
+         <!doctype html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <title>Test</title>
+            </head>
+            <body>
+              <h1>Apache Web server running on SUSE Linux</h1>
+            </body>
+          </html>
+
+```
+Capture du serveur SUSE
+![alt text](image-2.png)
