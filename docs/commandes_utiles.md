@@ -14,10 +14,13 @@ vagrant global-status
 ```
 
 ## Ansible
-
+```
+ansible testing --list-hosts #affiche toutes les machines qui sont compris dans le groupe "all"
+```
 
 ## Debian/Ubuntu
 Pour effectuer une recherche dans le cache uniquement sur le nom des paquets
 ``` bash
 apt-ache search --names-only ansible
 ```
+
