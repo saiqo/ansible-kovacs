@@ -64,5 +64,6 @@ nav:
     - Atelier 07 - Idempotence: 07-Idempotence/index.md
     - Atelier 10 - Playbooks: 10-Playbooks/index.md
     - Atelier 12 - Handlers: 12-Handlers/index.md
+    - Atelier 14 - Variables: 14-Variables/index.md
 
   - Commandes utiles: commandes_utiles.md
