@@ -20,10 +20,12 @@ Un playbook chrony.yml qui assure la synchronisation NTP de tous vos Target Host
         state: started
         enabled: true
 ```
-*** Vérification du service sur les target ***
+**Vérification du service sur les target**
+
 ![alt text](image.png)
 
-    Jetez un œil sur le fichier de configuration /etc/chrony.conf fourni par défaut.
+* Jetez un œil sur le fichier de configuration /etc/chrony.conf fourni par défaut.
+
 ```bash
 vi /etc/chrony.conf
 ```
@@ -106,5 +108,5 @@ yamllint chrony.yml
 
 
 ```
-*** Test pour voir l'idempotence ***
+**Test pour voir l'idempotence**
 ![alt text](image-3.png)
