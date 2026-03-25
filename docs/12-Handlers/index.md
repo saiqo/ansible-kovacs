@@ -110,3 +110,42 @@ yamllint chrony.yml
 ```
 **Test pour voir l'idempotence**
 ![alt text](image-3.png)
+
+# Playbook final 
+```yml
+---  # chrony.yml
+
+- hosts: all
+  tasks:
+    - name: Installer Chrony
+      dnf:
+        name: chrony
+
+    - name: Start & enable Chrony
+      service:
+        name: chronyd
+        state: Started
+        enabled: true
+
+    - name: Installer la configuration personnalisée chrony
+      copy:
+        dest: /etc/chrony.conf
+        mode: 0644
+        content: |
+          server 0.fr.pool.ntp.org iburst
+          server 1.fr.pool.ntp.org iburst
+          #server 2.fr.pool.ntp.org iburst
+          server 3.fr.pool.ntp.org iburst
+          driftfile /var/lib/chrony/drift
+          makestep 1.0 3
+          rtcsync
+          logdir /var/log/chrony
+      notify: Recharger la conf
+
+  handlers:
+
+    - name: Recharger la conf
+      service:
+        name: chronyd
+        state: restarted
+```
