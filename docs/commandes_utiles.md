@@ -53,6 +53,6 @@ apt-ache search --names-only ansible
 ## Vi 
 ``` bash
 :set paste #coller en gardant les indentations
-:set 
+:set mouse= # Sous debian lorsque la souris n'est pas disponible
 ```
 
