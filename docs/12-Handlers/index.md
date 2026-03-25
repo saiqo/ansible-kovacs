@@ -106,3 +106,5 @@ yamllint chrony.yml
 
 
 ```
+*** Test pour voir l'idempotence ***
+![alt text](image-3.png)
