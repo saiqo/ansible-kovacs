@@ -59,4 +59,3 @@ apt-ache search --names-only ansible
 :set paste #coller en gardant les indentations
 :set mouse= # Sous debian lorsque la souris n'est pas disponible
 ```
-
