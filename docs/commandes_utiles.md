@@ -34,6 +34,10 @@ ansible-config dump # Affiche toutes les options possible pour la config
 
 ```
 
+``` bash
+ansible-playbook <playbook> --check --diff  #Voir ce que va faire le playbook et qu'est ce que ça change
+```
+
 Choisir le nombre de fork (nombre de connexions en parallèles)
 ```
 ansible-playbook hello-all.yml -f 1
