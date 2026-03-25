@@ -58,6 +58,7 @@ logdir /var/log/chrony
           makestep 1.0 3
           rtcsync
           logdir /var/log/chrony
+        
 ```
 
 * Prenez en compte cette nouvelle configuration.
@@ -77,4 +78,31 @@ yamllint chrony.yml
 ```
 * Vérifiez l'idempotence de votre playbook
 
+```yml 
+#Pour l'idempotence, ajouter le handler et le module notify après copy
 
+    - name: Installer la configuration personnalisée chrony
+      copy:
+        dest: /etc/chrony.conf
+        mode: 0644
+        content: |
+          server 0.fr.pool.ntp.org iburst
+          server 1.fr.pool.ntp.org iburst
+          #server 2.fr.pool.ntp.org iburst
+          server 3.fr.pool.ntp.org iburst
+          driftfile /var/lib/chrony/drift
+          makestep 1.0 3
+          rtcsync
+          logdir /var/log/chrony
+      notify: Recharger la conf
+
+
+  handlers:
+
+    - name: Recharger la conf
+      service:
+        name: chronyd
+        state: restarted
+
+
+```
