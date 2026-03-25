@@ -63,5 +63,6 @@ nav:
     - Atelier 06 - Configuration de base: 06-Configuration_de_base/index.md
     - Atelier 07 - Idempotence: 07-Idempotence/index.md
     - Atelier 10 - Playbooks: 10-Playbooks/index.md
+    - Atelier 12 - Handlers: 12-Handlers/index.md
 
   - Commandes utiles: commandes_utiles.md
