@@ -63,6 +63,8 @@ Pour ce playbook, nous ne pouvons pas utilisé le module `command`, car le `| wc
 
 De plus, nous avons changé le paramètre `hosts: all` en `hosts: rocky,suse`
 
+Et comme le résultat contient qu'une seule ligne, nous pouvons utiliser `stdout` plutôt que `stdout_lines` qui renvoit une liste.
+
 Voici le playbook :
 
 ``` yaml title=""
