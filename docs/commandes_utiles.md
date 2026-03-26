@@ -7,7 +7,7 @@ icon: material/note-edit
 Listes de commandes utiles
 
 ## Vagrant
-```
+``` bash
 vagrant box list
 vagrant up <image>/<vm>
 vagrant destroy -f <image> | vagrant destroy -f
@@ -39,13 +39,18 @@ ansible-playbook <playbook> --check --diff  #Voir ce que va faire le playbook et
 ```
 
 Choisir le nombre de fork (nombre de connexions en parallèles)
-```
+``` bash
 ansible-playbook hello-all.yml -f 1
 ```
 
 Pour lancer à partir d'une tâche dans un playbook
 ``` bash
 ansible-playbook apache-01.yml --start-at-task="*page*"
+```
+
+Afficher les facts ansible en filtrant sur des mots clés
+``` bash
+ansible rocky -m setup -a "filter=*dns*
 ```
 
 ## Debian/Ubuntu
