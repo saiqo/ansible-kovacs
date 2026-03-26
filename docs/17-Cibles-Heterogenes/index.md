@@ -1,6 +1,6 @@
 # Cibles hétérogènes
 
-Voici notre playbook méthode "bourrin" :
+Voici notre playbook méthode "bourrin" pour installer chrony sur Debian, Ubuntu, Rocky et openSUSE :
 
 ``` yaml title="chrony-01.yml"
 --- # chrony-01.yml
@@ -32,7 +32,7 @@ Voici notre playbook méthode "bourrin" :
       when: ansible_distribution == "openSUSE Leap"
 
     # Enable & start service
-    - name: Enable & start chrony service on Debian based system
+    - name: Enable & start chrony service
       service:
         name: chronyd
         state: started
