@@ -65,5 +65,6 @@ nav:
     - Atelier 10 - Playbooks: 10-Playbooks/index.md
     - Atelier 12 - Handlers: 12-Handlers/index.md
     - Atelier 14 - Variables: 14-Variables/index.md
+    - Atelier 15 - Variables Enregistrés: 15-Variables-Enregistrés/index.md
 
   - Commandes utiles: commandes_utiles.md
