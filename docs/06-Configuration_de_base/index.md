@@ -132,12 +132,6 @@ $ vagrant destroy -f
 ```
 ![alt text](image-6.png)
 
-* Supplémentaire : Préciser l'interpréteur python
-```bash
-[testlab:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_user=vagrant
-ansible_become=yes
-```
-### Pour éviter d'avoir 
+**Supplémentaire : Préciser l'interpréteur python**
+Pour éviter d'avoir les warnings Python
 ![alt text](image-5.png)
