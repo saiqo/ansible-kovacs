@@ -68,5 +68,6 @@ nav:
     - Atelier 15 - Variables Enregistrés: 15-Variables-Enregistrés/index.md
     - Atelier 16 - Facts et variables implicites: 16-Facts-et-variables-implicites/index.md
     - Atelier 17 - Cibles Hétérogènes: 17-Cibles-Heterogenes/index.md
+    - Atelier 19 - Jinja et Templates: 18-Jinja-et-templates/index.md
 
   - Commandes utiles: commandes_utiles.md

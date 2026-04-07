@@ -3,7 +3,7 @@
 
 **Écrivez trois playbooks pour afficher des informations sur chacun des Target Hosts :**
 
-* pkg-info.yml pour afficher le gestionnaire de paquets utilisé
+1) pkg-info.yml pour afficher le gestionnaire de paquets utilisé
 ```yml
 ---  # pkg-info.yml
 
@@ -20,7 +20,7 @@ Resultat:
 
 ![alt text](image.png)
 
-* python-info.yml pour afficher la version de Python installée
+2) python-info.yml pour afficher la version de Python installée
 ```yml
 ---  # python-info.yml
 
@@ -37,7 +37,7 @@ Resultat:
 Résultat:
 ![alt text](image-1.png)
 
-* dns-info.yml pour afficher le(s) serveur(s) DNS utilisé(s)
+3) dns-info.yml pour afficher le(s) serveur(s) DNS utilisé(s)
 ```yml
 ---  # dns-info.yml
 
