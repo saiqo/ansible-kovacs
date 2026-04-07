@@ -1,4 +1,4 @@
-# Cibles hétérogènes
+# Atelier 17 - Cibles hétérogènes
 
 **Le premier playbook chrony-01.yml utilisera les modules de gestion de paquets natifs apt, dnf et zypper et s'inspirera de la méthode « gros sabots » utilisée plus haut dans cet atelier.**
 
