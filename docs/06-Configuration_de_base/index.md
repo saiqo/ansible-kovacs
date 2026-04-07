@@ -134,9 +134,6 @@ $ vagrant destroy -f
 
 * Supplémentaire : Préciser l'interpréteur python
 ```bash
-les warnings Python
-
-
 [testlab:vars]
 ansible_python_interpreter=/usr/bin/python3
 ansible_user=vagrant
